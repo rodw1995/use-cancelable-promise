@@ -1,0 +1,63 @@
+{
+  "name": "@rodw95/use-cancelable-promise",
+  "version": "0.0.1",
+  "description": "React hook to make promises cancelable and safe",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "promise",
+    "cancelable",
+    "unmount"
+  ],
+  "author": "Robbie op de Weegh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodw1995/use-cancelable-promise"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "build": "rimraf lib && tsc",
+    "test": "jest",
+    "lint": "eslint '{src,tests}/**/*.{ts,tsx}'"
+  },
+  "dependencies": {
+    "@rodw95/use-mounted-state": "^0.0.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@testing-library/react-hooks": "^3.2.1",
+    "@types/jest": "^25.1.4",
+    "@types/react": "^16.9.23",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "jest": "^25.1.0",
+    "react": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "coverageDirectory": "coverage",
+    "testMatch": [
+      "<rootDir>/tests/**/*.test.(ts|tsx)"
+    ]
+  }
+}

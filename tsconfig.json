@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "lib",
+    "target": "es5",
+    "lib": ["es2018", "dom"],
+    "strict": true,
+    "declaration": true
+  },
+  "include": ["src"]
+}
