@@ -5,7 +5,7 @@ export default () => {
   const isMounted = useMountedState();
 
   return useCallback(
-    (promise: Promise<any>, onCancel?: () => void) => new Promise<any>((resolve, reject) => {
+    <T>(promise: Promise<T>, onCancel?: () => void) => new Promise<T>((resolve, reject) => {
       promise
         .then((result) => {
           if (isMounted()) {
